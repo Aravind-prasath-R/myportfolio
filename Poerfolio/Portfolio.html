@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aravind Prasath | Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+    a { color: #fff; text-decoration: none; }
+    section { padding: 80px 10%; }
+    h1, h2 { font-weight: 700; }
+
+    nav {
+      position: fixed;
+      width: 100%;
+      background: #000;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #222;
+      z-index: 1000;
+    }
+    nav ul { display: flex; gap: 20px; list-style: none; }
+
+    .hero {
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap:60px;
+    }
+    .hero img {
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #fff;
+    }
+    .hero h1 { font-size: 3rem; }
+    .hero p { margin: 20px 0; max-width: 600px; }
+    .btn {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 10px 25px;
+      border: 1px solid #fff;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #fff; color: #000; }
+
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .skill-box, .project {
+      border: 1px solid #222;
+      padding: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #222;
+    }
+
+    @media(max-width:768px){
+      .hero{flex-direction:column; text-align:center;}
+      .hero h1{font-size:2.2rem;}
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <h2>Aravind Prasath</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero img" id="home">
+  <img src="profile.jpg" alt="Aravind Prasath" data-aos="fade-right">
+  <div data-aos="fade-left">
+    <h1>Aravind Prasath</h1>
+    <p>Aspiring Full Stack Developer passionate about building scalable and modern web applications.</p>
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+</section>
+<hr>
+
+<section id="about" data-aos="fade-up">
+  <h2>About Me</h2>
+  <div class="about-grid">
+    <p>I am a passionate IT student with a strong interest in full stack development. I have completed a Full Stack Developer course from GUVI and built multiple projects using modern technologies.</p>
+    <p><br><strong>Education:</strong><br>B.Tech Information Technology<br>P.B College of Engineering, Chennai<br>2022 – 2026</p>
+  </div>
+</section>
+<hr>
+<section id="skills" data-aos="fade-up">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="skill-box">HTML</div>
+    <div class="skill-box">CSS</div>
+    <div class="skill-box">JavaScript</div>
+    <div class="skill-box">React JS</div>
+    <div class="skill-box">Bootstrap</div>
+    <div class="skill-box">Python</div>
+    <div class="skill-box">Django</div>
+    <div class="skill-box">Node JS</div>
+    <div class="skill-box">MySQL</div>
+    <div class="skill-box">GitHub</div>
+  </div>
+</section>
+<hr>
+<section id="projects" data-aos="fade-up">
+  <h2>Projects</h2>
+  <div class="projects">
+    <div class="project">
+      <h3>E-commerce Website</h3>
+      <p>React JS, Python, Django, MySQL</p>
+      <p>Full-featured e-commerce platform with login, product management, and cart system.</p>
+    </div>
+    <div class="project">
+      <h3>Social Media Application</h3>
+      <p>React JS, Python, Django, MySQL</p>
+      <p>Users can create posts, like, comment, and manage profiles.</p>
+    </div>
+    <div class="project">
+      <h3>Fruits Delivery Application</h3>
+      <p>HTML, CSS, JavaScript, Java, Spring Boot, MySQL</p>
+      <p>Online fruits ordering system with admin and user modules.</p>
+    </div>
+  </div>
+</section>
+<hr>
+<br>
+<section id="contact" data-aos="fade-up">
+  <h2>Contact</h2>
+  <div class="contact-info">
+    <p>Email: aravindprasath296@gmail.com</p>
+    <p>Phone: 7639814264</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/aravind-prasath-1aa99b325" target="_blank">View Profile</a></p>
+    <p>GitHub: <a href="https://github.com/Aravind-prasath-R" target="_blank">View GitHub</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 Aravind Prasath</p>
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, once: true });
+  </script>
+</body>
+</html>
